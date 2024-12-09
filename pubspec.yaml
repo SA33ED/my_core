@@ -1,0 +1,60 @@
+name: my_core
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  cached_network_image: ^3.4.1
+  cupertino_icons: ^1.0.8
+  data_connection_checker_tv: ^0.3.5-nullsafety
+  dio: ^5.7.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_localization: ^0.2.3
+  flutter_screenutil: ^5.9.3
+  get_it: ^8.0.2
+  image_picker: ^1.1.2
+  intl: ^0.19.0
+  mime: ^2.0.0
+  shared_preferences: ^2.3.3
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/gif/
+    - assets/images/png/
+    - assets/images/svg/
+    - assets/images/anim/
+    - assets/translations/ar.json
+    - assets/translations/en.json
+
+  fonts:
+    - family: Beiruti
+      fonts:
+        - asset: assets/fonts/Beiruti-Black.ttf
+        - asset: assets/fonts/Beiruti-Bold.ttf
+        - asset: assets/fonts/Beiruti-ExtraBold.ttf
+        - asset: assets/fonts/Beiruti-ExtraLight.ttf
+        - asset: assets/fonts/Beiruti-Light.ttf
+        - asset: assets/fonts/Beiruti-Medium.ttf
+        - asset: assets/fonts/Beiruti-Regular.ttf
+        - asset: assets/fonts/Beiruti-SemiBold.ttf
+
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/core/utils/
+  filename: app_assets.dart
